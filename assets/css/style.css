@@ -1,0 +1,289 @@
+/*****************************************************************
+                        MAIN CSS
+*****************************************************************/
+
+@font-face {
+    font-family: 'hack';
+    src: url(../fonts/hack-regular-webfont.woff) format(woff);
+}
+
+@font-face {
+    font-family: 'sfuitext';
+    src: url(../fonts/sfuitext-regular-webfont.woff) format(woff);
+}
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sfuitext";
+}
+
+html {
+    min-width: 1500px;
+}
+
+.container {
+    width: 1440px;
+    margin: auto;
+}
+
+.theHeader, .theJumbotron {
+    background-color: #151b2b;
+    width: 100%;
+    padding: 30px;
+}
+
+
+/*****************************************************************
+                        MAIN JUMBOTRON
+*****************************************************************/
+
+.theMainJumbotron {
+    display: grid;
+    grid-template-columns: 500px auto;
+    height: 750px;
+}
+
+.theJumbotronLeftPart {
+    display: grid;
+    justify-content: flex-start;
+    max-width: 500px;
+}
+
+.theJumbotronTextTitle {
+    display: flex;
+
+    align-items: center;
+}
+
+.theJumbotronTextTitleText {
+    display: flex;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.githubStarLink {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
+}
+
+.githubImageAndStar {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    border-right: 1px solid gray;
+    background-color: #dddddd;
+    border-radius: 3px 0 0 3px;
+}
+
+.githubStarLinkRight {
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+.githubStarIcon {
+    filter: invert(1);
+    height: 100%;
+}
+
+.githubStarText {
+    padding: 2px;
+}
+
+.theJumbotronSubtitle {
+    font-size: 23px;
+    color: white;
+    margin: 30px 0;
+}
+
+.theJumbotronMessage {
+    color: #7e7fa9;
+    font-weight: lighter;
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+.theJumbotronLinks {
+    display: flex;
+}
+
+.btn {
+    padding: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 30px 30px 0 0;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.imgBtn {
+    padding: 5px;
+}
+
+.textBtn {
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.btnGithub {
+    background-color: #454658;
+}
+
+.btnDiscord {
+    background-color: #6578c0;
+}
+
+.theJumbotronPictures {
+    display: grid;
+    height: 750px;
+    justify-content: center;
+}
+
+.jumbotronImg {
+    margin: auto;
+    position:relative;
+}
+
+.jumbotronDashes {
+    top: -250px;
+    left: -16px;
+}
+
+.jumbotronKubernetes {
+    top: -580px;
+    left: 18px;
+}
+
+.jumbotronCloud {
+    top: -640px;
+    left: 26px;
+}
+
+/*****************************************************************
+                        THE SECTIONS
+*****************************************************************/
+
+
+/* GENERAL SECTION */
+
+.theSections {
+    background-color: #f9f9fd;
+}
+
+.theMainSections {
+    padding: 30px 0;
+}
+
+.theSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.sectionSubTitle {
+    text-align: center;
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+/* FIRST SECTION */
+
+.sectionFirstImg {
+    margin: 10px 0;
+}
+
+/* SECOND SECTION */
+
+.sectionSecondImg {
+    margin-top: -30px;
+}
+
+.rustSection {
+    width: 1340px;
+    background-color: white;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.rustTitle {
+    background-color: #5d64d2;
+    font-size: 30px;
+    padding: 0 5px;
+    color: white;
+    border-radius: 3px;
+}
+
+.rustText {
+    padding: 30px 0;
+
+}
+
+/* THIRD SECTION  */
+
+.theThirdSection {
+    padding: 70px 0;
+    display: grid;
+    justify-content: space-around;
+    row-gap: 50px;
+    grid-template-columns: 450px 450px;
+}
+
+.thirdSectionCard {
+    margin: 20px;
+
+}
+
+.thirdSectionTitle {
+    font-size: 23px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.thirdSectionText {
+    font-size: 16px;
+    margin-bottom: 30px;
+
+}
+
+.thirdSectionLink {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*****************************************************************
+                        THE FOOTER
+*****************************************************************/
+
+.theFooterTitle {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footerIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.footerIcons img {
+    margin: 50px;
+}
